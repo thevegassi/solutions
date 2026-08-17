@@ -55,6 +55,9 @@
   .step-item:last-child{padding-right:0}
   .step-item:not(:last-child)::after{content:'→';position:absolute;top:8px;right:-8px;color:#D3FF33;font-size:20px;line-height:1}
   .cap-grid{transition:background .3s ease}
+  h1,h2,h3{overflow-wrap:break-word;word-break:break-word}
+  .card-flex{display:flex;flex-wrap:wrap;margin-top:52px}
+  .card-flex-item{flex:1 1 280px}
   @media (prefers-reduced-motion:reduce){
     [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}
     *{animation:none!important}
@@ -63,7 +66,7 @@
     .nav-links{display:none!important}
     .nav-cta-btn{display:none!important}
     .burger{display:inline-flex!important}
-    .hero-display{font-size:clamp(46px,12vw,80px)!important}
+    .hero-display{font-size:clamp(36px,10.5vw,80px)!important}
   }
   @media (max-width:820px){
     .steps-row{flex-direction:column;gap:40px}
@@ -128,7 +131,7 @@
     <div class="hero-in-1" style="display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#D3FF33">
       <span style="width:8px;height:8px;background:#D3FF33;display:inline-block"></span>Технологический партнёр бизнеса
     </div>
-    <h1 class="hero-display hero-in-2" style="font-family:'Oswald',sans-serif;font-weight:800;font-size:clamp(48px,7.2vw,104px);line-height:.98;letter-spacing:-.02em;text-transform:uppercase;margin:22px 0 0;max-width:18ch">Инновационные цифровые решения для развития <span style="color:#D3FF33">современного бизнеса</span></h1>
+    <h1 class="hero-display hero-in-2" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(40px,5.6vw,80px);line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;margin:22px 0 0;max-width:1150px">Инновационные цифровые решения для развития <span style="color:#D3FF33">современного бизнеса</span></h1>
     <p class="hero-in-3" style="margin:30px 0 0;max-width:58ch;font-size:clamp(15px,1.5vw,18px);line-height:1.75;color:#B9BFC9">KEY SOLUTIONS объединяет технологии, креативный подход и понимание бизнес-задач, чтобы создавать решения, открывающие компаниям новые возможности для роста.</p>
     <div class="hero-in-4" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:40px">
       <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;padding:18px 30px;background:#D3FF33;color:#1F2533;font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease" style-hover="transform:translateY(-3px);box-shadow:0 14px 36px rgba(211,255,51,.34)">Обсудить проект →</a>
@@ -150,7 +153,7 @@
   <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(40px,5vw,80px);align-items:start">
     <div data-reveal>
       <div style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#005540;font-weight:600">О компании</div>
-      <h2 id="about-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;color:#1F2533;max-width:17ch">Не просто цифровые инструменты. Новые возможности для бизнеса.</h2>
+      <h2 id="about-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;color:#1F2533">Не просто цифровые инструменты. Новые возможности для бизнеса.</h2>
       <p style="margin:26px 0 0;font-size:16px;line-height:1.8;color:#54595f;max-width:54ch">Сегодня компаниям важно не только использовать технологии, но и понимать, как они могут усиливать развитие, клиентский опыт и внутренние процессы.</p>
       <p style="margin:18px 0 0;font-size:16px;line-height:1.8;color:#54595f;max-width:54ch">KEY SOLUTIONS создаёт решения, в которых цифровые продукты, автоматизация, интеграции и креативная коммуникация работают как единая система — адаптированная под цели конкретной компании, а не под шаблон.</p>
       <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:32px">
@@ -186,42 +189,42 @@
     <div data-reveal style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px">
       <div>
         <div style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#D3FF33;font-weight:600">Возможности KEY SOLUTIONS</div>
-        <h2 id="capabilities-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;max-width:16ch">Одна система, шесть направлений</h2>
+        <h2 id="capabilities-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;max-width:520px">Одна система, шесть направлений</h2>
       </div>
       <p style="font-size:15px;line-height:1.7;color:#B9BFC9;max-width:40ch">Каждое направление работает самостоятельно и одновременно усиливает остальные — как части общей цифровой архитектуры.</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1px;margin-top:56px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
-      <div data-reveal class="cap-grid" style="background:#1F2533;padding:38px 32px;transition-delay:0ms" style-hover="background:#222a3a">
+    <div class="card-flex" style="margin-top:56px;gap:1px">
+      <div data-reveal class="cap-grid card-flex-item" style="background:#1F2533;border:1px solid rgba(255,255,255,.09);padding:38px 32px;transition-delay:0ms" style-hover="background:#222a3a">
         <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" style="margin-bottom:22px"><polygon points="20,4 36,34 4,34" fill="none" stroke="#D3FF33" stroke-width="2"/><polygon points="20,16 27,30 13,30" fill="#D3FF33"/></svg>
         <div style="font-size:12px;color:#6b7280">01</div>
         <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:23px;letter-spacing:-.01em;text-transform:uppercase;margin:6px 0 0;color:#FEFEFE">Цифровые продукты</h3>
         <p style="font-size:14px;line-height:1.7;color:#9aa2af;margin:14px 0 0">Сайты, веб-платформы, лендинги, каталоги, интернет-магазины, личные кабинеты и приложения.</p>
       </div>
-      <div data-reveal class="cap-grid" style="background:#1F2533;padding:38px 32px;transition-delay:60ms" style-hover="background:#222a3a">
+      <div data-reveal class="cap-grid card-flex-item" style="background:#1F2533;border:1px solid rgba(255,255,255,.09);padding:38px 32px;transition-delay:60ms" style-hover="background:#222a3a">
         <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" style="margin-bottom:22px"><polygon points="20,4 36,34 4,34" fill="none" stroke="#D3FF33" stroke-width="2"/><path d="M14 25 a6 6 0 1 1 4.2 5.7 M14 25 l-3 -1 M14 25 l1 3" fill="none" stroke="#D3FF33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <div style="font-size:12px;color:#6b7280">02</div>
         <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:23px;letter-spacing:-.01em;text-transform:uppercase;margin:6px 0 0;color:#FEFEFE">Автоматизация процессов</h3>
         <p style="font-size:14px;line-height:1.7;color:#9aa2af;margin:14px 0 0">CRM, внутренние системы, базы знаний, управление задачами, учёт и стандартизация работы.</p>
       </div>
-      <div data-reveal class="cap-grid" style="background:#1F2533;padding:38px 32px;transition-delay:120ms" style-hover="background:#222a3a">
+      <div data-reveal class="cap-grid card-flex-item" style="background:#1F2533;border:1px solid rgba(255,255,255,.09);padding:38px 32px;transition-delay:120ms" style-hover="background:#222a3a">
         <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" style="margin-bottom:22px"><polygon points="20,4 36,34 4,34" fill="none" stroke="#D3FF33" stroke-width="2"/><path d="M13 21 h14 v7 l-4.5 0 -2.5 3.5 -1 -3.5 h-6 z" fill="#D3FF33"/></svg>
         <div style="font-size:12px;color:#6b7280">03</div>
         <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:23px;letter-spacing:-.01em;text-transform:uppercase;margin:6px 0 0;color:#FEFEFE">Цифровые коммуникации</h3>
         <p style="font-size:14px;line-height:1.7;color:#9aa2af;margin:14px 0 0">Telegram-боты, Mini Apps, чат-боты и клиентские сценарии взаимодействия.</p>
       </div>
-      <div data-reveal class="cap-grid" style="background:#1F2533;padding:38px 32px;transition-delay:0ms" style-hover="background:#222a3a">
+      <div data-reveal class="cap-grid card-flex-item" style="background:#1F2533;border:1px solid rgba(255,255,255,.09);padding:38px 32px;transition-delay:0ms" style-hover="background:#222a3a">
         <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" style="margin-bottom:22px"><polygon points="20,4 36,34 4,34" fill="none" stroke="#D3FF33" stroke-width="2"/><circle cx="20" cy="25" r="3" fill="#D3FF33"/><circle cx="13" cy="18" r="2" fill="#D3FF33"/><circle cx="27" cy="18" r="2" fill="#D3FF33"/><line x1="20" y1="25" x2="13" y2="18" stroke="#D3FF33" stroke-width="1.5"/><line x1="20" y1="25" x2="27" y2="18" stroke="#D3FF33" stroke-width="1.5"/></svg>
         <div style="font-size:12px;color:#6b7280">04</div>
         <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:23px;letter-spacing:-.01em;text-transform:uppercase;margin:6px 0 0;color:#FEFEFE">Искусственный интеллект</h3>
         <p style="font-size:14px;line-height:1.7;color:#9aa2af;margin:14px 0 0">ИИ-помощники для работы с информацией, обращениями, знаниями и повседневными задачами.</p>
       </div>
-      <div data-reveal class="cap-grid" style="background:#1F2533;padding:38px 32px;transition-delay:60ms" style-hover="background:#222a3a">
+      <div data-reveal class="cap-grid card-flex-item" style="background:#1F2533;border:1px solid rgba(255,255,255,.09);padding:38px 32px;transition-delay:60ms" style-hover="background:#222a3a">
         <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" style="margin-bottom:22px"><polygon points="20,4 36,34 4,34" fill="none" stroke="#D3FF33" stroke-width="2"/><circle cx="14" cy="27" r="4" fill="none" stroke="#D3FF33" stroke-width="2"/><circle cx="26" cy="21" r="4" fill="none" stroke="#D3FF33" stroke-width="2"/><line x1="17.5" y1="25" x2="22.5" y2="23" stroke="#D3FF33" stroke-width="2"/></svg>
         <div style="font-size:12px;color:#6b7280">05</div>
         <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:23px;letter-spacing:-.01em;text-transform:uppercase;margin:6px 0 0;color:#FEFEFE">Интеграции</h3>
         <p style="font-size:14px;line-height:1.7;color:#9aa2af;margin:14px 0 0">Связь между сайтом, CRM, платёжными сервисами, аналитикой, учётными системами и внутренними платформами.</p>
       </div>
-      <div data-reveal class="cap-grid" style="background:#1F2533;padding:38px 32px;transition-delay:120ms" style-hover="background:#222a3a">
+      <div data-reveal class="cap-grid card-flex-item" style="background:#1F2533;border:1px solid rgba(255,255,255,.09);padding:38px 32px;transition-delay:120ms" style-hover="background:#222a3a">
         <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true" style="margin-bottom:22px"><polygon points="20,4 36,34 4,34" fill="none" stroke="#D3FF33" stroke-width="2"/><polygon points="20,15 26,25 20,35 14,25" fill="#D3FF33"/></svg>
         <div style="font-size:12px;color:#6b7280">06</div>
         <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:23px;letter-spacing:-.01em;text-transform:uppercase;margin:6px 0 0;color:#FEFEFE">Креативные технологии</h3>
@@ -264,7 +267,7 @@
   <div style="max-width:1280px;margin:0 auto">
     <div data-reveal>
       <div style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#005540;font-weight:600">Как мы создаём решения</div>
-      <h2 id="approach-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;color:#1F2533;max-width:18ch">От идеи до работающей цифровой среды</h2>
+      <h2 id="approach-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;color:#1F2533;max-width:700px">От идеи до работающей цифровой среды</h2>
     </div>
     <div data-reveal class="steps-row" style="margin-top:64px">
       <sc-for list="{{ steps }}" as="item" hint-placeholder-count="4">
@@ -302,11 +305,11 @@
   <div style="max-width:1280px;margin:0 auto">
     <div data-reveal>
       <div style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#005540;font-weight:600">Почему KEY SOLUTIONS</div>
-      <h2 id="why-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;color:#1F2533;max-width:18ch">Партнёр, а не подрядчик на одну задачу</h2>
+      <h2 id="why-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;color:#1F2533;max-width:700px">Партнёр, а не подрядчик на одну задачу</h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;margin-top:56px;background:#E2DFD1;border:1px solid #E2DFD1">
+    <div class="card-flex" style="margin-top:56px;gap:1px">
       <sc-for list="{{ whyUs }}" as="item" hint-placeholder-count="5">
-        <div data-reveal style="background:#FEFEFE;padding:38px 34px" style-hover="background:#F4F1E8">
+        <div data-reveal class="card-flex-item" style="background:#FEFEFE;border:1px solid #E2DFD1;padding:38px 34px" style-hover="background:#F4F1E8">
           <div style="display:flex;align-items:baseline;justify-content:space-between"><span style="font-family:'Oswald',sans-serif;font-weight:700;font-size:44px;letter-spacing:-.02em;color:#E2DFD1;line-height:1">{{ item.num }}</span><span style="width:14px;height:14px;background:#D3FF33;display:block"></span></div>
           <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;letter-spacing:-.01em;text-transform:uppercase;margin:20px 0 0;color:#1F2533">{{ item.title }}</h3>
           <p style="font-size:14px;line-height:1.7;color:#54595f;margin:12px 0 0">{{ item.text }}</p>
@@ -322,7 +325,7 @@
   <div style="position:relative;z-index:1;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(40px,5vw,80px);align-items:start">
     <div data-reveal>
       <div style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#D3FF33;font-weight:600">Контакты</div>
-      <h2 id="contact-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0;max-width:15ch">Превратите цифровые возможности в преимущество вашего бизнеса</h2>
+      <h2 id="contact-h" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(32px,4.2vw,58px);line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;margin:18px 0 0">Превратите цифровые возможности в преимущество вашего бизнеса</h2>
       <p style="font-size:16px;line-height:1.8;color:#B9BFC9;margin:24px 0 0;max-width:44ch">Расскажите о своей задаче. Мы поможем определить, какое цифровое решение сможет поддержать развитие вашей компании.</p>
       <div style="margin-top:40px;display:flex;flex-direction:column;gap:18px">
         <a href="mailto:hello@keysolutions.io" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:#FEFEFE"><span style="width:40px;height:40px;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:#D3FF33;font-size:15px">@</span><span style="font-size:15px">hello@keysolutions.io</span></a>
@@ -432,27 +435,35 @@ class Component extends DCLogic {
       if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in')); return; }
       const io = new IntersectionObserver((entries) => {
         entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      }, { threshold: 0, rootMargin: '80px 0px -2% 0px' });
       els.forEach(e => io.observe(e));
       this._io = io;
-      // safety: force-reveal anything already in the initial viewport so content
-      // is never stuck invisible even if transitions are paused (hidden tab).
-      this._safety = setTimeout(() => {
-        els.forEach(e => {
+
+      // Safety net: a fast scroll/fling can carry an element across the whole
+      // viewport between two IntersectionObserver samples, leaving it stuck at
+      // opacity:0 forever. A lightweight recurring check (independent of scroll
+      // events firing) reveals anything at or past the viewport on every tick,
+      // and an absolute time cap guarantees content is never permanently stuck
+      // invisible even if a section is skipped by both mechanisms.
+      const start = Date.now();
+      this._safetyInterval = setInterval(() => {
+        const remaining = document.querySelectorAll('[data-reveal]:not(.in)');
+        if (!remaining.length) { clearInterval(this._safetyInterval); return; }
+        const vh = window.innerHeight;
+        const forceAll = Date.now() - start > 4000;
+        remaining.forEach((e) => {
           const r = e.getBoundingClientRect();
-          if (r.top < window.innerHeight * 0.95) {
-            e.classList.add('in'); e.style.opacity = '1'; e.style.transform = 'none';
-          }
+          if (forceAll || r.top < vh) { e.classList.add('in'); io.unobserve(e); }
         });
-      }, 1400);
+      }, 250);
     };
     setTimeout(reveal, 30);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this._onScroll);
+    if (this._safetyInterval) clearInterval(this._safetyInterval);
     if (this._io) this._io.disconnect();
-    if (this._safety) clearTimeout(this._safety);
   }
 
   renderVals() {
